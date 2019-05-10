@@ -1,0 +1,28 @@
+#videoBox {
+    border: 10px solid #fff;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+
+video {
+    width: 100%;
+    vertical-align: bottom;
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+}
+
+#videoBox.in {
+    position: absolute;
+    width: 0;
+    height: 0;
+    animation: ac 1s;
+}
+
+#videoBox.out {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    z-index: 999;
+    animation: an 0.5s;
+}

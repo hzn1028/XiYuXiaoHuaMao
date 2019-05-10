@@ -1,0 +1,45 @@
+section.parallax {
+    position: relative;
+    height: auto;
+    padding: 110px 0px;
+
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+section.parallax:after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.30);
+    z-index: 100;
+    content: ' ';
+}
+
+section.parallax h1 {
+    color: #574940;
+    position: relative;
+    z-index: 101;
+    font-size: 58px;
+    line-height: 1.5;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section.parallax h3 {
+    color: #c75512ed;
+    text-indent: 2em;
+}
+
+section.parallax.parallax-1 {
+    background-image: url("../../images/大背景.jpg");
+    background-position: 100% 0%;
+}

@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>漠之冠</title>
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="extend/3d/style.css" rel="stylesheet" type='text/css' />
+	<link href="extend/video/style.css" rel="stylesheet" type='text/css' />
+	<link href="extend/bg/style.css" rel="stylesheet" type='text/css' />
+	<!-- <link href="extend/style.css" rel="stylesheet" type='text/css' /> -->
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="3dcss/css/bootstrap-grid.min.css" /> -->
+	<!-- <link rel="stylesheet" type="text/css" href="3dcss/css/htmleaf-demo.css"> -->
+	<link rel="stylesheet" type="text/css" href="3dcss/css/style.css">
+	<link rel="stylesheet" href="extend/vedio/css/style.css">
+	<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="extend/vedio/extend/css/style.css">
+
+	<!-- Custom Theme files -->
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<style type="text/css">
+		#about3 {
+			background: url(./images/背景图2.jpg);
+			background-size: 100% 100%;
+		}
+
+		#about2 {
+			background: url(./images/新疆背景.jpg);
+			background-size: 100% 100%;
+		}
+
+		.demo-1,
+		.demo-2 {
+			position: relative;
+			background-size: cover;
+			overflow: hidden;
+		}
+
+		.video {
+			z-index: 2;
+		}
+
+		.gallery {
+			position: relative;
+			z-index: 2;
+			margin: 0;
+		}
+
+		.demo-1 .codrops-header {
+			position: absolute;
+		}
+
+		.banner-bottom {
+			position: relative;
+			z-index: 2;
+			background: #fff;
+		}
+
+
+		.banner-bottom-text h2 {
+			padding-bottom: 18px;
+		}
+
+		.item-img {
+			overflow: hidden;
+		}
+	</style>
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/modernizr.custom.js"></script>
+	<link href="css/animate.min.css" rel="stylesheet">
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+	<!-- //animation-effect -->
+	<!-- Custom Theme files -->
+	<!--webfont-->
+	<link href='https://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700,700italic' rel='stylesheet'
+		type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Cabin:400,400italic,500,500italic,600,600italic,700,700italic'
+		rel='stylesheet' type='text/css'>
+	<!-- start-smoth-scrolling -->
+
+	<!-- start-smoth-scrolling -->
+
+</head>
+
+<body>
+	<div class="container" style="position: fixed;z-index: 3;width:100%;">
+		<div class="navigation">
+			<div class="navigation-right animated wow slideInLeft" data-wow-delay="300ms">
+				<span class="menu"><img src="images/menu.png" alt=" " /></span>
+				<nav class="link-effect-4" id="link-effect-4">
+					<ul class="nav1 nav nav-wil">
+						<li class="active"><a data-hover="首页" href="index.html">首页</a></li>
+						<li><a data-hover="简单介绍" href="#services" class="scroll">简单介绍</a></li>
+						<li><a data-hover="功能" href="#about" class="scroll">功能</a></li>
+						<li><a data-hover="绣法与制作特点" href="#about3" class="scroll">绣法与制作特点</a></li>
+						<li><a data-hover="品种及分布地区" href="#gallery" class="scroll">品种及分布地区</a></li>
+						<li><a data-hover="适用人群及戴法" href="#about2" class="scroll">适用人群及戴法</a></li>
+						<!-- <li><a data-hover="Mail Us" href="#footer" class="scroll">结尾语</a></li> -->
+					</ul>
+				</nav>
+			</div>
+			<script>
+				$("span.menu").click(function () {
+					$("ul.nav1").slideToggle(300, function () {
+						// Animation complete.
+					});
+				});
+			</script>
+			<!-- /script-for-menu -->
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<div data-vide-bg="video/sea" class="video" style="padding-top: 110px;">
+		<div class="center-container">
+
+			<div class="logo animated wow zoomIn" data-wow-delay="900ms">
+				<h1><a href="index.html">漠之冠</a>
+
+				</h1>
+			</div>
+			<div class="start animated wow bounce" data-wow-delay="700ms">
+				<a href="#services" class="hvr-bounce-to-bottom scroll">点击走进花冠曼妙世界</a>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<script>
+		window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')
+	</script>
+	<script src="js/jquery.vide.min.js"></script>
+	<!-- //banner -->
+	<div class="banner-bottom" id="services">
+		<div class="container">
+
+			<div class="col-md-6 banner-bottom-left animated wow bounceInLeft" data-wow-delay="700ms"
+				style="margin-top: 50px;">
+				<div class="banner-bottom-text">
+					<h2>简单</h2>
+					<div class="banner-bottom-text-pos">
+						<h3>介绍</h3>
+					</div>
+				</div>
+				<div class="bar1 bar-con">
+					<div class="bar" data-percent="70"></div>
+				</div>
+				<script>
+					(function ($) {
+						$.fn.progress = function () {
+							var percent = this.data("percent");
+							this.css("width", percent + "%");
+						};
+					}(jQuery));
+
+					$(document).ready(function () {
+						$(".bar1 .bar").progress();
+					});
+				</script>
+				<style type="text/css">
+					.container p {
+						text-indent: 2em;
+					}
+				</style>
+				<!-- Single Service Area -->
+				<div class="single-service-area d-flex align-items-center wow fadeInUp" data-wow-delay="100ms">
+					<!-- Icon -->
+					<!-- Content -->
+					<div class="service-content">
+
+						<p>居住在新疆天山南北的维吾尔人，无论男女老幼，不分春夏秋冬，都喜欢戴一种四楞的小花帽（维语称为”朵巴”），这是维吾尔族几百年来的传统习惯。
+						</p>
+					</div>
+				</div>
+
+				<!-- Single Service Area -->
+				<div class="single-service-area d-flex align-items-center wow fadeInUp" data-wow-delay="300ms">
+					<!-- Icon -->
+					<!-- Content -->
+					<div class="service-content">
+
+						<p>由于它位于头部，古代称边饰。其纹路丰富多样。仅巴达姆花帽品种的样式就
+							“首服"或”头衣”。唐代前后的一段时期，中原地区不仅多达20余种。
+						</p>
+					</div>
+				</div>
+
+				<!-- Single Service Area -->
+				<div class="single-service-area d-flex align-items-center wow fadeInUp" data-wow-delay="500ms">
+					<!-- Icon -->
+					<!-- <div class="service-icon mr-30">
+						<img src="" alt="">
+					</div> -->
+					<!-- Content -->
+					<div class="service-content">
+
+						<p>这种小花帽不但实用，而且是一种具有装饰美感的工艺品。最早流行于喀什地区，后流行盛行胡服，更欣赏胡帽。如唐刘肃在(大唐新语)卷中全疆，是一种成年男子喜爱的一种花帽。
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 banner-bottom-right animated wow bounceInRight" data-wow-delay="700ms">
+				<div class="banner-bottom-right-left">
+					<div class="banner-bottom-right-left1">
+						<div class="box box007 box3">
+							<div class="cover top-left">
+								<h3 class="title">图案纹样</h3>
+								<p class="intro">图案纹样的构思则没有专门的设计，而是靠世代相传的腹稿。花帽上，一般用黑白两色或彩色的丝线绣出民族形式的花纹图案。</p>
+								<p class="date"></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="banner-bottom-right-left">
+					<div class="banner-bottom-right-left1">
+						<div class="box box007 box1">
+							<div class="cover top-left">
+								<h3 class="title">男女老助喜戴</h3>
+								<p class="intro">新疆花帽为维吾尔等少数民族的生活日用品，亦属精美的工艺品，常挂于壁端作为家庭装饰品，或作为馈赠。</p>
+								<p class="date"></p>
+							</div>
+						</div>
+					</div>
+					<div class="banner-bottom-right-left1">
+						<div class="box box007 box2">
+							<div class="cover top-left">
+								<h3 class="title">精巧手法</h3>
+								<p class="intro">在30厘米的布面上，维吾尔族艺人可以用刺绣、编织、挑花等不同手法，制作出近300种图案花色各不相同的花帽。</p>
+								<p class="date"></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="demo-1" id="about">
+		<main>
+			<section class="parallax parallax-1">
+				<div class="animated wow bounceInLeft" data-wow-delay="500ms">
+					<div class="banner-bottom-text">
+						<h3 style="margin-left: 44px">功能</h3>
+					</div>
+				</div>
+				<div class="animated wow bounceInRight" data-wow-delay="500ms">
+					<div class="container">
+
+						<h3 style="padding: 50px 30px">
+							小方帽绚丽多彩，工艺精致，造型美观奇特，戴在头上，既能防止太阳暴晒，又是一种美丽的装饰品。姑娘常把绣花帽馈赠小伙子，作为表达爱情的信物之一。小花帽是识别维吾尔人的标志。小花帽既是当地人不可缺少的日常服饰，又是精美的旅游纪念品。
+							每逢节日、婚礼、歌舞盛会，走亲访友的人们都要挑选心爱的小花帽给自己装饰打扮。在集市巴扎上的花帽市场，更是琳琅满目，美不胜收。现在，新疆的花帽还作为民族工艺品内而运销国外市场。一些维吾尔族姑娘还把新手绣制的自己最满意的花帽送给自己的意中人，以表达最纯真的爱情。
+						</h3>
+					</div>
+				</div>
+			</section>
+			<section class="content">
+				<div class="container">
+				</div>
+			</section>
+
+		</main>
+
+	</div>
+	<div class="demo-2" id="about3">
+		<div class="container" style="margin-top: 50px;">
+			<div class="animated wow bounceInLeft" data-wow-delay="500ms">
+				<div class="banner-bottom-text">
+					<h3>绣法与</h3>
+					<div class="banner-bottom-text-pos banner-bottom-text-pos2">
+						<h3 style="padding-top: 29px;">制作特点</h3>
+					</div>
+				</div>
+				<div class="bar1 bar-con" style="width: 35%;margin:6em 0 2em 18em;">
+					<div class="bar" data-percent="70"></div>
+				</div>
+
+				<script>
+					(function ($) {
+						$.fn.progress = function () {
+							var percent = this.data("percent");
+							this.css("width", percent + "%");
+						};
+					}(jQuery));
+
+					$(document).ready(function () {
+						$(".bar1 .bar3").progress();
+					});
+				</script>
+			</div>
+			<section class="section-features">
+				<div class="container" style="padding: 50px 0;">
+					<ul class="features-list">
+						<li class="feature-item">
+							<div class="img-col" style="width: 38%;margin-left:90px;">
+								<div class="img-wrap youtube-video-background">
+									<div class="wrapper">
+										<div class="js-video">
+											<video class="js-media video2" poster="images/视频图2.jpg"
+												style="height:361px;">
+												<source src="extend/vedio/extend/vedio/绣小花帽的过程-1.mp4"
+													type="video/mp4" />
+												<p>你的浏览器不支持 HTML5 Video。</p>
+											</video>
+											<i data-playPause class="playPause fa fa-play ui-icon"><span></span></i>
+											<div class="ui">
+												<div>
+													<div data-progress class="progress">
+														<div data-buffer class="progress-buffer"></div>
+														<div data-time class="progress-time"></div>
+													</div><!-- progress -->
+												</div>
+												<div>
+													<span class="timeDisplay"><i data-currentTime>0:00</i> / <i
+															data-duration>0:00</i></span>
+												</div>
+												<div>
+													<i data-mute class="fa fa-volume-up ui-icon"></i>
+												</div>
+												<div>
+													<div data-volume="100" class="volumeControl"><span
+															class="ui-slider-handle"></span></div>
+												</div>
+											</div><!-- ui -->
+											<i data-fullscreen class="fullscreen iconicfill-fullscreen"
+												title="fullscreen"></i>
+
+
+
+										</div><!-- js-video -->
+
+									</div><!-- wrapper -->
+								</div>
+							</div>
+							<div class="content-col">
+
+								<div class="desc">
+									<p>
+										㈠新疆维吾尔族小花帽图案精美，花纹繁多，色彩绚丽，做工精致，就其绣法和工艺特点可分为：有平绣、结绣、格子架绣、十字花绣、串珠片绣、扎绒刺绣、钩花刺绣、挑花搅结以及刺、扎、串、盘综合刺绣等。不论何种绣法，均能使图案纹样与缀结富有立体感。
+									</p>
+									<p>
+										㈡其绝大部分花帽制作特点是:将手工绣好的四瓣，以顶为中心缝合起来，套在木制帽模上成型，最后镶上黑绒布边，而成为立体小花帽，它可按缝折叠而便于携带和保存。偶尔也会见到用五瓣组成的小花帽，其装饰纹样、色彩安排，与四瓣花帽有异曲同工之妙。还有一种用白丝线钩制而成的钢扣软便帽，便于洗涤，图案纹样也极为丰富。另外，还有一种白布便帽，四面缀以简朴素净的红绿小花，适合平时戴用，也可作为其他帽子的内村小帽，价格又较低廉，因此也很受群众的欢迎。
+									</p>
+								</div>
+							</div>
+
+						</li>
+					</ul>
+				</div>
+
+			</section>
+			<div class="clearfix"> </div>
+		</div>
+
+
+
+	</div>
+	<div class="gallery" id="gallery">
+		<div class="container">
+			<div class="gallery-grids">
+				<div class="col-md-5 gallery-grid-left animated wow bounceInLeft" data-wow-delay="500ms">
+					<h3>维吾尔小花帽的图案纹样大都是以新疆花卉果实等自然形象为素材，加以艺术的提炼而成。众多的纹样按其构成骨式可归纳为：单独适合纹样（曼甫花帽），满地散花纹样（奇曼花帽），巴旦木花纹样（巴旦木花帽），以及十字对称纹样等等。
+					</h3>
+				</div>
+				<div class="col-md-7 gallery-grid-right animated wow bounceInRight" data-wow-delay="500ms">
+					<div class="banner-bottom-text">
+						<h3 style="padding-right: 85px;">品种及</h3>
+						<div class="banner-bottom-text-pos banner-bottom-text-pos2">
+							<h3 style="padding-left: 97px;padding-top: 29px;">分布地区</h3>
+						</div>
+					</div>
+					<div class="bar1 bar-con bar-con1">
+						<div class="bar3" data-percent="70"></div>
+					</div>
+					<script>
+						(function ($) {
+							$.fn.progress = function () {
+								var percent = this.data("percent");
+								this.css("width", percent + "%");
+							};
+						}(jQuery));
+
+						$(document).ready(function () {
+							$(".bar1 .bar3").progress();
+						});
+					</script>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="gallery-grid1 animated wow slideInLeft" data-wow-delay="500ms">
+				<div style="margin-bottom:30px;">
+					<div class="box">
+						<div class="box-img">
+							<img src="images/塔什干花帽 (2).jpg" alt="" style="margin-top: -25px;">
+						</div>
+						<div class="box-content">
+							<h4 class="title">塔什干花帽</h4>
+							<p class="description">源于乌兹别克斯坦的塔什传入新疆后经过发展与演变形成具有当地民族风格特点的多种系列样式的花帽。
+							</p>
+							<ul class="social-links">
+								<li><a href="#" class="fa fa-qq"></a></li>
+								<li><a href="#" class="fa fa-weibo"></a></li>
+								<li><a href="#" class="fa fa-weixin"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="gallery-grid1 animated wow slideInLeft" data-wow-delay="600ms">
+				<div style="margin-bottom:30px;">
+					<div class="box">
+						<div class="box-img">
+							<img src="images/齐曼.jpg" alt="">
+						</div>
+						<div class="box-content">
+							<h4 class="title">齐曼花帽</h4>
+							<p class="description">
+								帽以米字为骨架，花枝叶交错，花纹以枝杆连结或线条分隔，成多个正反三角、菱形格局，帽面图案似地毯排列，也称奇曼塔什干朵帕，以知识分子戴的最多。
+							</p>
+							<ul class="social-links">
+								<li><a href="#" class="fa fa-qq"></a></li>
+								<li><a href="#" class="fa fa-weibo"></a></li>
+								<li><a href="#" class="fa fa-weixin"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="gallery-grid1 animated wow slideInLeft" data-wow-delay="700ms">
+
+				<div style="margin-bottom:30px;">
+					<div class="box">
+						<div class="box-img">
+							<img src="images/戛兰姆花帽my.jpg" alt="">
+						</div>
+						<div class="box-content">
+							<h4 class="title">戛兰姆花帽</h4>
+							<p class="description">即扎绒绣花花帽。纹样，色彩大体与塔什千花帽相同，只是制作的工艺有所区别，采用扎钺法绣成，花帽面似地毯画，又称地毯花帽
+							</p>
+							<ul class="social-links">
+								<li><a href="#" class="fa fa-qq"></a></li>
+								<li><a href="#" class="fa fa-weibo"></a></li>
+								<li><a href="#" class="fa fa-weixin"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="gallery-grid1 animated wow slideInLeft" data-wow-delay="1000ms">
+				<div style="margin-bottom:30px;">
+					<div class="box">
+						<div class="box-img">
+							<img src="images/巴达姆花帽.jpg" alt="">
+						</div>
+						<div class="box-content">
+							<h4 class="title">巴达姆花帽</h4>
+							<p class="description">巴达姆是一种乔木果实启圆形，核食用。因形似新月，维吾尔人视为族花。这种花帽上样是由巴达姆杏核变形而成的一种图案，故这种花帽称巴达姆花帽
+							</p>
+							<ul class="social-links">
+								<li><a href="#" class="fa fa-qq"></a></li>
+								<li><a href="#" class="fa fa-weibo"></a></li>
+								<li><a href="#" class="fa fa-weixin"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="gallery-grid1 animated wow slideInLeft" data-wow-delay="900ms">
+				<div style="margin-bottom:30px;">
+					<div class="box">
+						<div class="box-img">
+							<img src="images/翟尔花帽.jpg" alt="">
+						</div>
+						<div class="box-content">
+							<h4 class="title">翟尔花帽</h4>
+							<p class="description">以黑墨，绿保红，探湖蓝，普蓝平绒做底用四个对称金银线盘绣成圆形、椭圆，方形，三角形，
+								不规则形单独纹样组成顶花，边缘为四个长方形纹样与主花上下对称排列，所绣少数是平的，多是立体的。
+							</p>
+							<ul class="social-links">
+								<li><a href="#" class="fa fa-qq"></a></li>
+								<li><a href="#" class="fa fa-weibo"></a></li>
+								<li><a href="#" class="fa fa-weixin"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="gallery-grid1 animated wow slideInLeft" data-wow-delay="800ms">
+				<div style="margin-bottom:30px;">
+					<div class="box">
+						<div class="box-img">
+							<img src="images/艾特莱斯花帽my.jpg" alt="">
+						</div>
+						<div class="box-content">
+							<h4 class="title">艾特莱斯花帽</h4>
+							<p class="description">
+								艾特莱丝绸质地柔软，轻盈飘逸的布料，也是维吾尔人独特的服饰。色泽十分艳丽，图案富于变化，样式很多，采用植物图案的有花卉、枝叶、巴旦木杏、苹果、梨等。采用饰物图案的有木梳、流苏、耳坠、宝石等。
+							</p>
+							<ul class="social-links">
+								<li><a href="#" class="fa fa-qq"></a></li>
+								<li><a href="#" class="fa fa-weibo"></a></li>
+								<li><a href="#" class="fa fa-weixin"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="clearfix"> </div>
+			<!-- script-for-swipebox -->
+			<link rel="stylesheet" href="css/swipebox.css">
+			<script src="js/jquery.swipebox.min.js"></script>
+			<script type="text/javascript">
+				jQuery(function ($) {
+					$(".swipebox").swipebox();
+				});
+			</script>
+			<!-- //script-for-swipebox -->
+		</div>
+	</div>
+	</div>
+	<div class="demo-2" id="about2">
+		<div class="container">
+			<div class="animated wow bounceInLeft" data-wow-delay="500ms">
+				<div class="banner-bottom-text" style="padding-top: 20px;">
+					<h3 style="padding-right: 85px;">适用人群</h3>
+					<div class="banner-bottom-text-pos banner-bottom-text-pos2">
+						<h3 style="padding-left: 0;padding-top: 35px;">及戴法</h3>
+					</div>
+				</div>
+				<div class="bar1 bar-con" style="width: 40%;">
+					<div class="bar" data-percent="70"></div>
+				</div>
+
+				<script>
+					(function ($) {
+						$.fn.progress = function () {
+							var percent = this.data("percent");
+							this.css("width", percent + "%");
+						};
+					}(jQuery));
+
+					$(document).ready(function () {
+						$(".bar1 .bar3").progress();
+					});
+				</script>
+			</div>
+			<section class="section-features">
+				<div class="container">
+					<ul class="features-list">
+						<li class="feature-item">
+							<div class="content-col" style="visibility: hidden;">
+
+								<div class="desc">
+									<p>
+										维吾尔花帽的种类很多，制作工艺复杂。人们根据自己的年龄、性别、爱好和习惯来选择不同的花帽。适用于所有人。花帽也作为一种礼品向客人馈赠，是表达维吾尔族人对客人友好热情的一种方式。
+									</p>
+									<p>
+										这个小花帽有四种戴法。有传统的戴法，有时尚的戴法，有侧歪着的戴法，有带有装饰的戴法。详细请看右边视频介绍！
+									</p>
+
+								</div>
+							</div>
+							<div class="img-col" style="margin-left: -350px;margin-top: -10px;">
+								<div class="img-wrap youtube-video-background">
+									<div class="wrapper">
+										<div class="js-video">
+											<video class="js-media video2" poster="images/视频图.jpg">
+												<source src="extend/vedio/extend/vedio/小花帽的戴法.mp4" type="video/mp4" />
+												<p>你的浏览器不支持 HTML5 Video。</p>
+											</video>
+											<i data-playPause class="playPause fa fa-play ui-icon"><span></span></i>
+											<div class="ui">
+												<div>
+													<div data-progress class="progress">
+														<div data-buffer class="progress-buffer"></div>
+														<div data-time class="progress-time"></div>
+													</div><!-- progress -->
+												</div>
+												<div>
+													<span class="timeDisplay"><i data-currentTime>0:00</i> / <i
+															data-duration>0:00</i></span>
+												</div>
+												<div>
+													<i data-mute class="fa fa-volume-up ui-icon"></i>
+												</div>
+												<div>
+													<div data-volume="100" class="volumeControl"><span
+															class="ui-slider-handle"></span></div>
+												</div>
+											</div><!-- ui -->
+											<i data-fullscreen class="fullscreen iconicfill-fullscreen"
+												title="fullscreen"></i>
+
+
+
+										</div><!-- js-video -->
+
+									</div><!-- wrapper -->
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+			</section>
+			<div class="clearfix"> </div>
+
+		</div>
+
+
+
+	</div>
+
+	<div class="footer animated wow bounceInDown" data-wow-delay="400ms" id="footer">
+		<div class="container">
+			<p style="text-align: center">Copyright &copy;漠之冠</p>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 1000);
+			});
+		});
+	</script>
+	<!-- //footer -->
+
+	<script src="js/bootstrap.min.js"></script>
+	<!-- here stars scrolling icon -->
+	<script src="extend/3d/jquery.hover3d.min.js"></script>
+	<!-- <script src="extend/vedio/js/jquery-2.1.1.min.js" type="text/javascript"></script> -->
+	<!-- <script src="extend/vedio/js/videoBackground.js"></script> -->
+
+	<script src="https://cdn.bootcss.com/jqueryui/1.11.0/jquery-ui.min.js"></script>
+	<script src="extend/vedio/extend/js/vedio.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+				*/
+
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+			$(".project").hover3d({
+				selector: ".project__card",
+				shine: true,
+			});
+
+			$(".movie").hover3d({
+				selector: ".movie__card",
+				shine: true,
+				sensitivity: 20,
+			});
+
+		});
+		//loop fix
+		// document.getElementsByTagName('video')[0].onended = function () {
+		// 	this.load();
+		// 	this.play();
+		// };
+	</script>
+
+</body>
+
+</html>
